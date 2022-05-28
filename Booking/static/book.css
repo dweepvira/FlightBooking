@@ -1,0 +1,176 @@
+.home {
+  text-decoration: none;
+  font-size: 20px;
+
+  color: white;
+}
+.home:hover {
+  color: #dde0e8;
+}
+.back {
+  background-color: #192a2a;
+  padding: 10px;
+}
+body {
+  background-color: #dde0e8;
+}
+.content {
+  margin: 100px 200px 100px;
+  display: flex;
+}
+
+.girl {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin-top: 150px;
+  /* position: absolute;
+    top: 200px;
+    left: 50px; */
+}
+/* form */
+#form {
+  width: 600px;
+}
+.Signup-head {
+  padding: 8px;
+  border-radius: 5px;
+}
+.signup-content .radio {
+  margin: 10px 10px;
+}
+.signup-content2 .input {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+.signup-content2 .tarikh {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+.signup-content2 .person {
+  padding: 10px;
+  margin: 10px;
+  color: rgb(0, 0, 0);
+}
+.signup-content2 .travel {
+  margin: 20px 20px;
+}
+.signup-content2 .travel2 {
+  padding: 5px;
+}
+.signup-content2 .submit-btn {
+  width: 200px;
+  padding: 10px;
+  margin-left: 200px;
+}
+#booking-form {
+  padding-left: 200px;
+}
+/* BUTTON */
+.btn {
+  background: #0c0e0f;
+  background-image: -webkit-linear-gradient(top, #0c0e0f, #171d21);
+  background-image: -moz-linear-gradient(top, #0c0e0f, #171d21);
+  background-image: -ms-linear-gradient(top, #0c0e0f, #171d21);
+  background-image: -o-linear-gradient(top, #0c0e0f, #171d21);
+  background-image: linear-gradient(to bottom, #0c0e0f, #171d21);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #192a3a;
+  background-image: -webkit-linear-gradient(top, #192a3a, #192a3a);
+  background-image: -moz-linear-gradient(top, #192a3a, #192a3a);
+  background-image: -ms-linear-gradient(top, #192a3a, #192a3a);
+  background-image: -o-linear-gradient(top, #192a3a, #192a3a);
+  background-image: linear-gradient(to bottom, #192a3a, #192a3a);
+  text-decoration: none;
+  color: #ffffff;
+}
+@media (max-width: 1400px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .girl {
+    margin-top: 0px;
+
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #booking-form {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 650px) {
+  #form {
+    width: 400px;
+    background-color: rgb(204, 200, 200);
+    border-radius: 9px;
+  }
+
+  .signup-content2 .input {
+    width: 320px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .signup-content2 .tarikh {
+    width: 237px;
+    margin-left: 30px;
+  }
+  .signup-content2 .submit-btn {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 120px;
+    margin-bottom: 15px;
+  }
+  .signup-content2 .travel {
+    margin: 20px 10px;
+  }
+  .signup-content2 .travel2 {
+    padding: 5px;
+    margin-left: 10px;
+  }
+}
+/* socials */
+#socials .container-fluid {
+  background-color: #192a2a;
+  padding: 3% 15% 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer-link {
+  color: #fff;
+  padding: 13px;
+}
+
+.footer-link:hover {
+  color: #666666;
+}
+p.copy {
+  color: #978e8e;
+  font-size: small;
+  padding-top: 10px;
+  padding-left: 25px;
+}

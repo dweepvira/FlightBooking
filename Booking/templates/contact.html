@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- font awesome link -->
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@200&family=Poppins:wght@300&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external css -->
+    <link rel="stylesheet" href="Booking/static/contact.css" />
+  </head>
+  <body>
+    <div class="back"><a class="home" href="index.html">Home>></a></div>
+    <section class="contact">
+      <div class="content">
+        <h1>Contact Us</h1>
+        <p class="phrase">Let's Have A Conversation,
+          We'd Love To Hear From You</p></p>
+      </div>
+      <div class="container-fluid">
+        <div class="contact-info">
+          <div class="box">
+            <div class="text">
+              <h2>
+                <i class="fas fa-map-marker-alt"></i>
+                <div></div>
+                Address
+              </h2>
+              <p class="address">
+                A/204, Jay Shreenath Krupa HSG Soc, Mahatma Phule Rd, Dombivli
+                West, Mumbai, Maharashtra, 421202
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <h2>
+                <i class="fas fa-envelope"></i>
+                <div></div>
+                E-mail
+              </h2>
+              <p>sstravelsolutions@gmail.com</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <h2>
+                <i class="fas fa-phone"></i>
+                <div></div>
+              </h2>
+              <p>+91-9820849153</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form method="post">
+            {% csrf_token %}
+            <h2>Send Message</h2>
+            <div class="inputBox">
+              <span>Full Name</span>
+              <div></div>
+              <input type="text" name="full_name" required="required" />
+            </div>
+            <div class="inputBox">
+              <span>E-mail</span>
+              <div></div>
+              <input type="text" name="email" required="required" />
+            </div>
+            <div class="inputBox">
+              <span>Type your message....</span>
+              <div></div>
+              <textarea required="required" rows="3" cols="30" name="desc"></textarea>
+            </div>
+            <div></div>
+            <div class="button">
+              <input
+                class="btn text-white"
+                type="submit"
+                name=""
+                value="send"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="socials">
+      <div class="container-fluid">
+        <div class="bottom-container">
+          <a
+            class="footer-link"
+            href="https://www.linkedin.com/SS Travel Solutions"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            class="footer-link"
+            href="https://www.instagram.com/sstravelsolutions"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+
+          <a
+            class="footer-link"
+            href="https://www.facebook.com/SS Travel Solutions"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a class="footer-link" href="mailto:sstravelsolutions@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+
+          <p class="copy">© S.S Travel Solutions.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
