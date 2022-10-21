@@ -20,41 +20,46 @@
           </p>
           <div id="booking-form">
             <form id="form" action="" method="post">
+             {% csrf_token %}
               <div class="signup-form">
                 <div class="Signup-head bg-dark text-white">
                   <h1>WHERE TO?</h1>
                 </div>
                 <div class="signup-content">
                   <label class="text" for="">Destination</label>
-                  <input class="dest" type="text=" />
+                  <input class="dest" type="text=" name="dest" />
                 </div>
 
                 <div class="signup-content2">
                   <label class="text">Trip start date :</label>
-                  <input type="date" class="tarikh bg-light" />
+                  <input type="date" class="tarikh bg-light" name="strdate"/>
                   <label class="text"> Trip end date :</label>
-                  <input type="date" class="tarikh bg-light" />
+                  <input type="date" class="tarikh bg-light" name="enddate" />
                   <div></div>
 
                   <input
                     type="number"
                     class="bg-light person"
                     placeholder="Adults"
+                    name="adults1"
                   />
                   <input
                     type="number"
                     class="bg-light person"
                     placeholder="Children"
+                    name="children1"
                   />
                   <input
                     type="text"
                     class="bg-light person"
                     placeholder="Full Name"
+                    name="f_name"
                   />
                   <input
                     type="text"
                     class="bg-light person"
                     placeholder="Phone Number"
+                    name="ph_num"
                   />
 
                   <label class="travel">Hotel category</label>
@@ -62,6 +67,7 @@
                     id="category"
                     onchange="EnableDisableTextBox(this)"
                     class="bg-light travel2"
+                    name="hot_cat"
                   >
                     <option></option>
                     <option value="1">3 Star</option>
@@ -76,10 +82,11 @@
                     class="travel"
                     id="txtOther"
                     disabled="disabled"
+                    name="hot_cat"
                   />
 
                   <label class="travel">Land Transfers</label>
-                  <select class="bg-light travel2">
+                  <select class="bg-light travel2" name="lnd_trns">
                     <option></option>
                     <option>Sedan</option>
                     <option>SUV</option>
@@ -87,7 +94,7 @@
                     <option>Bus</option>
                   </select>
                   <label class="travel">Transportation</label>
-                  <select class="bg-light travel2">
+                  <select class="bg-light travel2" name="transport">
                     <option></option>
                     <option>Air</option>
                     <option>Rail</option>

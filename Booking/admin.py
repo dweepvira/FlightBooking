@@ -3,7 +3,7 @@ from django.contrib import admin
 from Booking.models import Book
 from Booking.models import Contact
 # Register your models here.
-from .models import Contact,Subscribe
+from .models import Contact, Plan,Subscribe
   
 class ContactAdmin(admin.ModelAdmin):
     list_display = ('full_name', 'email')
@@ -24,5 +24,6 @@ class SubscribeAdmin(admin.ModelAdmin):
 admin.site.register(Book)
 admin.site.register(Contact,ContactAdmin)
 admin.site.register(Subscribe,SubscribeAdmin)
+admin.site.register(Plan)
 # admin.site.register(BookForm)
 # admin.site.register(CustomForm)

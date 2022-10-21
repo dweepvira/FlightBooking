@@ -38,9 +38,9 @@ class Book(models.Model):
     Return =models.DateField()
     adults =models.IntegerField()
     children =models.IntegerField(null=True)
-    travel_class=models.CharField(max_length=100)
     name=models.CharField(max_length=100)
     phone_no=models.CharField(max_length=10)
+    emailid=models.EmailField()
 
     def __str__(self):
         return self.name
@@ -55,3 +55,19 @@ class Subscribe(models.Model):
     email_id =models.EmailField()
     con_number =models.CharField(max_length=10)
 
+
+class Plan(models.Model):
+    dest=models.CharField(max_length=150)
+    strdate=models.DateField()
+    enddate=models.DateField()
+    adults1=models.IntegerField()
+    children1=models.IntegerField()
+    f_name=models.CharField(max_length=150)
+    ph_num=models.CharField(max_length=10)
+    hot_cat=models.CharField(max_length=150)
+    lnd_trns=models.CharField(max_length=150)
+    transport=models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.f_name
+    

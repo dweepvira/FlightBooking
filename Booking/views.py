@@ -11,7 +11,7 @@ from django.http import HttpResponse
 import Booking
 from Booking.models import Book
 from Booking.forms import BookForm
-from Booking.models import Contact,Subscribe
+from Booking.models import Contact,Subscribe,Plan
 import csv
 @csrf_exempt
 
@@ -41,7 +41,7 @@ def booking_view(request):
     # booking=BookForm.objects.all()
     # booking=BookForm(request.GET)
     if request.method == 'POST':
-        if request.POST.get('r') and request.POST.get('ticket_from') and request.POST.get('ticket_to') and request.POST.get('depart') and request.POST.get('Return') and request.POST.get('adults') and request.POST.get('children') and request.POST.get('name') and request.POST.get('phone_no')and request.POST.get('travel_class'):
+        if request.POST.get('r') and request.POST.get('ticket_from') and request.POST.get('ticket_to') and request.POST.get('depart') and request.POST.get('Return') and request.POST.get('adults') and request.POST.get('children') and request.POST.get('name') and request.POST.get('phone_no')and request.POST.get('emailid'):
             
             post=Book()
             post.ticket_type= request.POST.get('r')
@@ -53,7 +53,7 @@ def booking_view(request):
             post.children= request.POST.get('children')
             post.name= request.POST.get('name')
             post.phone_no= request.POST.get('phone_no')
-            post.travel_class= request.POST.get('travel_class')
+            post.emailid= request.POST.get('emailid')
             post.save()
             context={
                 'post':post
@@ -119,10 +119,32 @@ def termsandcon_view(request):
 
 
 def plans_view(request):
-    # if request.method == 'POST':
+    if request.method == 'POST':
+        if request.POST.get('dest') and request.POST.get('strdate') and request.POST.get('enddate') and request.POST.get('adults1') and request.POST.get('children1') and request.POST.get('f_name') and request.POST.get('ph_num') and request.POST.get('hot_cat') and request.POST.get('lnd_trns') and request.POST.get('transport'):
+            
+            plan=Plan()
+            plan.dest= request.POST.get('dest')
+            plan.strdate= request.POST.get('strdate')
+            plan.enddate= request.POST.get('enddate')
+            plan.adults1= request.POST.get('adults1')
+            plan.children1= request.POST.get('children1')
+            plan.f_name= request.POST.get('f_name')
+            plan.ph_num=request.POST.get('ph_num')
+            plan.hot_cat= request.POST.get('hot_cat')
+            plan.lnd_trns= request.POST.get('lnd_trns')
+            plan.transport= request.POST.get('transport')
+            plan.save()
+            plans={
+                'plan':plan
+            }
 
     
-    return render(request, 'plans.html',)
+        return render(request,'plans.html',plans)
+
+    else:
+        plan=Plan()
+
+        return render(request, 'plans.html',)
 
 
 
