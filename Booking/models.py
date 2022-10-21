@@ -39,6 +39,12 @@ class Book(models.Model):
     adults =models.IntegerField()
     children =models.IntegerField(null=True)
     travel_class=models.CharField(max_length=100)
+    name=models.CharField(max_length=100)
+    phone_no=models.CharField(max_length=10)
+
+    def __str__(self):
+        return self.name
+
 
 class Contact(models.Model):
     full_name =models.CharField(max_length=150)
@@ -48,12 +54,4 @@ class Contact(models.Model):
 class Subscribe(models.Model):
     email_id =models.EmailField()
     con_number =models.CharField(max_length=10)
-    
-# class CustomForm(forms.ModelForm):     
-#     class Meta: 
-#         model = Book
-#         fields='__all__'
-#         widgets = {'ticket_type': forms.RadioSelect}
-    # ticket_type=forms.ChoiceField(choices=type_choices,widgets=forms.RadioSelect)
-    
 

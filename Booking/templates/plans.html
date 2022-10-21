@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/bootstrap.css" />
+    <link rel="stylesheet" href="static/plans.css" />
+  </head>
+  <body>
+    <section>
+      <div class="back"><a class="home" href="index.html">Home>></a></div>
+
+      <div class="container-fluid">
+        <div class="content">
+          <p class="customise">
+            Customise Your Packages With Us. You Wish, We Complete.
+          </p>
+          <div id="booking-form">
+            <form id="form" action="" method="post">
+              <div class="signup-form">
+                <div class="Signup-head bg-dark text-white">
+                  <h1>WHERE TO?</h1>
+                </div>
+                <div class="signup-content">
+                  <label class="text" for="">Destination</label>
+                  <input class="dest" type="text=" />
+                </div>
+
+                <div class="signup-content2">
+                  <label class="text">Trip start date :</label>
+                  <input type="date" class="tarikh bg-light" />
+                  <label class="text"> Trip end date :</label>
+                  <input type="date" class="tarikh bg-light" />
+                  <div></div>
+
+                  <input
+                    type="number"
+                    class="bg-light person"
+                    placeholder="Adults"
+                  />
+                  <input
+                    type="number"
+                    class="bg-light person"
+                    placeholder="Children"
+                  />
+                  <input
+                    type="text"
+                    class="bg-light person"
+                    placeholder="Full Name"
+                  />
+                  <input
+                    type="text"
+                    class="bg-light person"
+                    placeholder="Phone Number"
+                  />
+
+                  <label class="travel">Hotel category</label>
+                  <select
+                    id="category"
+                    onchange="EnableDisableTextBox(this)"
+                    class="bg-light travel2"
+                  >
+                    <option></option>
+                    <option value="1">3 Star</option>
+                    <option value="2">4 Star</option>
+                    <option value="3">5 Star</option>
+                    <option value="4">Homestay</option>
+                    <option value="5">Villa</option>
+                    <option value="6">Others</option>
+                  </select>
+                  <input
+                    type="text"
+                    class="travel"
+                    id="txtOther"
+                    disabled="disabled"
+                  />
+
+                  <label class="travel">Land Transfers</label>
+                  <select class="bg-light travel2">
+                    <option></option>
+                    <option>Sedan</option>
+                    <option>SUV</option>
+                    <option>Tempo traveller</option>
+                    <option>Bus</option>
+                  </select>
+                  <label class="travel">Transportation</label>
+                  <select class="bg-light travel2">
+                    <option></option>
+                    <option>Air</option>
+                    <option>Rail</option>
+                    <option>Road</option>
+                  </select>
+
+                  <div></div>
+                  <input type="submit" value="SUBMIT" class="submit-btn btn" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="GET" href="contact.html">Get In Touch With Us</a>
+    </section>
+    <section id="socials">
+      <div class="container-fluid">
+        <p class="copy">© S.S Travel Solutions.</p>
+      </div>
+    </section>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

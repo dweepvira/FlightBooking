@@ -4,7 +4,7 @@ body {
 .home {
   text-decoration: none;
   font-size: 20px;
-
+  z-index: 99999999999!important;
   color: white;
 }
 .home:hover {
@@ -16,11 +16,24 @@ body {
   padding: 10px;
 }
 body {
-  background-image: url("sea.jpg");
+  background : url(images/pexels-pixabay-163872.jpg) ;
+  background-color: #192a2a;
   background-size: cover;
-
+  background-repeat: no-repeat;
   background-position: center;
 }
+.overlay
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #132128;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
 .contact {
   position: relative;
   padding: 50px 100px;
@@ -136,10 +149,7 @@ p {
   align-items: center;
 }
 /* socials */
-#socials .container-fluid {
-  background-color: #192a2a;
-  padding: 3% 15% 2%;
-}
+
 .footer-link {
   color: #fff;
   padding: 13px;
@@ -149,10 +159,10 @@ p {
   color: #666666;
 }
 p.copy {
-  color: #978e8e;
+  color: #fff;
   font-size: small;
   padding-top: 10px;
-  padding-left: 25px;
+  
 }
 @media (max-width: 991px) {
   .contact {
@@ -169,6 +179,22 @@ p.copy {
   .contact .content {
     max-width: 800px;
     text-align: center;
-    color: #192a2a;
+    
+  }
+  .overlay{
+    background: #040c10;
+  }
+}
+@media (max-width:750px){
+  .contact-form h2{
+    font-size: 25px;
+  }
+  .contact-form .inputBox{
+    font-size: 14px;
+  }
+}
+@media (max-width:430px){
+  .contact-form h2{
+    font-size: 16px;
   }
 }

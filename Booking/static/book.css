@@ -1,7 +1,7 @@
 .home {
   text-decoration: none;
   font-size: 20px;
-
+  z-index: 1000;
   color: white;
 }
 .home:hover {
@@ -12,63 +12,90 @@
   padding: 10px;
 }
 body {
-  background-color: #dde0e8;
+  background: url(images/contact_cover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #666666;
+  background-position: center;
+}
+.overlay
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #22333c;
+  mix-blend-mode: overlay;
+  pointer-events: none;
 }
 .content {
-  margin: 100px 200px 100px;
-  display: flex;
+  margin: 100px 100px 100px;
+  
 }
 
-.girl {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  margin-top: 150px;
-  /* position: absolute;
-    top: 200px;
-    left: 50px; */
+.container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 /* form */
 #form {
-  width: 600px;
+  width: 1000px;
+  background-color: #d6d6ff;
+  border-radius: 15px;
+  padding-bottom: 20px;
+ 
 }
 .Signup-head {
   padding: 8px;
-  border-radius: 5px;
+  padding-left: 20px;
+  border-radius: 15px;
+  
 }
 .signup-content .radio {
   margin: 10px 10px;
 }
 .signup-content2 .input {
-  width: 400px;
+  width: 460px;
   padding: 10px;
   margin: 10px;
   color: black;
+  border-radius: 10px;
+  border: 0;
 }
 .signup-content2 .tarikh {
   margin: 10px;
   padding: 10px;
   color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 0;
 }
 .signup-content2 .person {
   padding: 10px;
   margin: 10px;
-  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  border: 0;
 }
 .signup-content2 .travel {
   margin: 20px 20px;
+  border-radius: 10px;
+  border: 0;
 }
 .signup-content2 .travel2 {
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
 }
 .signup-content2 .submit-btn {
   width: 200px;
   padding: 10px;
-  margin-left: 200px;
+  margin-left: 370px;
+  margin-top: 20px;
 }
-#booking-form {
-  padding-left: 200px;
-}
+
 /* BUTTON */
 .btn {
   background: #0c0e0f;
@@ -85,6 +112,7 @@ body {
   font-size: 20px;
   padding: 5px 20px 5px 20px;
   text-decoration: none;
+  
 }
 
 .btn:hover {
@@ -97,33 +125,19 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-@media (max-width: 1400px) {
-  .content {
-    display: flex;
-    flex-direction: column;
-  }
-  .girl {
-    margin-top: 0px;
 
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 1110px) {
+  #form{
+    width: 500px;
   }
-  .container-fluid {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .signup-content2 .submit-btn{
+    margin-left: 160px;
   }
-  #booking-form {
-    padding-left: 0px;
-  }
+  
 }
-@media (max-width: 650px) {
+@media (max-width: 590px) {
   #form {
     width: 400px;
-    background-color: rgb(204, 200, 200);
     border-radius: 9px;
   }
 
@@ -139,22 +153,40 @@ body {
   }
   .signup-content2 .submit-btn {
     width: 150px;
-    margin-top: 15px;
-    margin-left: 120px;
-    margin-bottom: 15px;
+    margin-left: 130px;
   }
   .signup-content2 .travel {
     margin: 20px 10px;
+  
   }
-  .signup-content2 .travel2 {
-    padding: 5px;
-    margin-left: 10px;
+  .signup-content2 .person{
+    margin-left: 100px;
+  }
+  .Signup-head {
+    border-radius: 9px;
+  }
+  
+}
+@media(max-width:480px){
+  #form{
+    width: 250px;
+  }
+  .signup-content2 .input {
+    width: 200px;
+   
+  }
+  .signup-content2 .tarikh{
+    width: 180px;
+  }
+  .signup-content2 .person{
+    margin-left: 30px;
+  }
+  .signup-content2 .submit-btn {
+    margin-left: 50px;
   }
 }
 /* socials */
 #socials .container-fluid {
-  background-color: #192a2a;
-  padding: 3% 15% 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,15 +194,15 @@ body {
 }
 .footer-link {
   color: #fff;
-  padding: 13px;
+  padding: 15px;
 }
 
 .footer-link:hover {
   color: #666666;
 }
 p.copy {
-  color: #978e8e;
+  color: #f2eeee;
   font-size: small;
   padding-top: 10px;
-  padding-left: 25px;
+  padding-left: 11px;
 }
