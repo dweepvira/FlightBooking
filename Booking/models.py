@@ -39,7 +39,7 @@ class Book(models.Model):
     adults =models.IntegerField()
     children =models.IntegerField(null=True)
     name=models.CharField(max_length=100)
-    phone_no=models.CharField(max_length=10)
+    phone_no=models.CharField(max_length=13)
     emailid=models.EmailField()
 
     def __str__(self):
@@ -53,7 +53,7 @@ class Contact(models.Model):
 
 class Subscribe(models.Model):
     email_id =models.EmailField()
-    con_number =models.CharField(max_length=10)
+    con_number =models.CharField(max_length=13)
 
 
 class Plan(models.Model):
@@ -63,7 +63,7 @@ class Plan(models.Model):
     adults1=models.IntegerField()
     children1=models.IntegerField()
     f_name=models.CharField(max_length=150)
-    ph_num=models.CharField(max_length=10)
+    ph_num=models.CharField(max_length=13)
     hot_cat=models.CharField(max_length=150)
     lnd_trns=models.CharField(max_length=150)
     transport=models.CharField(max_length=150)
