@@ -33,4 +33,4 @@ urlpatterns = [
     path('customer.html',views.customer_view),
     path('about.html',views.about_view),
     path('plans.html',views.plans_view),
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
