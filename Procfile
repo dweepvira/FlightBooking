@@ -1,1 +1,1 @@
-web: gunicorn sstravelsolutions.wsgi --log-file -
+web: gunicorn FLightBooking.wsgi --log-file -
