@@ -1,18 +1,16 @@
-from multiprocessing import context
-import re
+
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
-import json
-# from amadeus import Client, ResponseError, Location
-from django.contrib import messages
-from django.http import HttpResponse
+
+
+
 
 # from .models import BookForm
-import Booking
+
 from Booking.models import Book
-from Booking.forms import BookForm
+
 from Booking.models import Contact,Subscribe,Plan
-import csv
+
 @csrf_exempt
 
 
