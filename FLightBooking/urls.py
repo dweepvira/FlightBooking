@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.generic.base import TemplateView
+
 from Booking import views
 
 urlpatterns = [
@@ -27,7 +27,7 @@ urlpatterns = [
     path('book.html',views.booking_view,name='book'),
     # path('book.html',views.showlist,),
     path('contact.html',views.contact_view),
-    # path('subs.html',views.Subs_view),
+    path('subs.html',views.Subs_view),
     path('login.html',views.login_view),
     path('termsAndCon.html',views.termsandcon_view),
     path('customer.html',views.customer_view),

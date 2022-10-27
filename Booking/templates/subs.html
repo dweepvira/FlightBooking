@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="static/bootstrap.css" />
+
+    <link rel="stylesheet" href="static/sub.css" />
+  </head>
+  <body>
+    <div class="back"><a class="home" href="index.html">Home>></a></div>
+    <div class="container-fluid">
+      <div>
+        <h2 class="heading">Thank You For Choosing Us !</h2>
+      </div>
+
+      <div>
+        <h3 class="updates">Kindly Subscribe For Regular Updates</h3>
+      </div>
+
+      <div class="input-form">
+        <form class="input" action="" method="post">
+          {% csrf_token %}
+          <div>
+            <input
+              class="input"
+              type="email"
+              name="email_id"
+              placeholder="Enter Your E-mail"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              class="input"
+              type="text"
+              name="con_number"
+              placeholder="Contact Number"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              type="submit"
+              value="SUBSCRIBE"
+              class="subs btn-sub text-white"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

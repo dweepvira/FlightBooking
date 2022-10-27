@@ -78,6 +78,7 @@ body {
   margin: 10px;
   border-radius: 10px;
   border: 0;
+  
 }
 .signup-content2 .travel {
   margin: 20px 20px;
@@ -180,7 +181,7 @@ body {
   }
   .signup-content2 .person{
     margin-left: 30px;
-    width: 150px;
+    width: 70%;
   }
   .signup-content2 .submit-btn {
     margin-left: 50px;

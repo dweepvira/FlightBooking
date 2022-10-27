@@ -1,0 +1,68 @@
+body{
+  margin: 0;
+  background-image: url('images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home {
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1000;
+    color: white;
+    
+  }
+  .home:hover {
+    color: #dde0e8;
+  }
+  .back {
+    background-color: #192a2a;
+    padding: 10px;
+    
+  }
+  .container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading{
+    font-size: 30px;
+    padding: 100px 50px 30px;
+  }
+  .updates{
+    font-size: 20px;
+  }
+  .input {
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .btn-sub {
+    background: #192a2a;
+    background-image: -webkit-linear-gradient(top, #192a2a, #192a2a);
+    background-image: -moz-linear-gradient(top, #192a2a, #192a2a);
+    background-image: -ms-linear-gradient(top, #192a2a, #192a2a);
+    background-image: -o-linear-gradient(top, #192a2a, #192a2a);
+    background-image: linear-gradient(to bottom, #192a2a, #192a2a);
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 14px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 6px 10px 6px 10px;
+    text-decoration: none;
+    margin-left: 35px;
+    margin-top: 20px;
+  }
+  
+  .btn-sub:hover {
+    background: #102c41;
+    background-image: -webkit-linear-gradient(top, #1b486b, #1b486b);
+    background-image: -moz-linear-gradient(top, #1b486b, #1b486b);
+    background-image: -ms-linear-gradient(top, #1b486b, #1b486b);
+    background-image: -o-linear-gradient(top, #1b486b, #1b486b);
+    background-image: linear-gradient(to bottom, #1b486b, #1b486b);
+    text-decoration: none;
+  }

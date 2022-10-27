@@ -17,20 +17,8 @@ from Booking.models import Contact,Subscribe,Plan
 
 
 def home_view(request):
-    if request.method == 'POST':
-        if request.POST.get('email_id') and request.POST.get('con_number'):
-            sub=Subscribe()
-            sub.email_id= request.POST.get('email_id')
-            sub.con_number= request.POST.get('con_number')
-            sub.save()
-            subs={
-                'sub':sub
-            }
-            return render(request,'index.html',subs)
+    return render(request, 'index.html',)
 
-    else:
-        sub=Subscribe()
-    return render(request,'index.html',)
     
 
 def booking_view(request):
@@ -85,21 +73,23 @@ def contact_view(request):
     return render(request, 'contact.html',)
 
 
-# def Subs_view(request):
-#     if request.method == 'POST':
-#         if request.POST.get('email_id') and request.POST.get("con_number"):
-#             sub=Subscribe()
-#             sub.email_id= request.POST.get('email_id')
-#             sub.con_number= request.POST.get('con_number')
-#             sub.save()
-#             subs={
-#                 'sub':sub
-#             }
-    
-#             return render(request, 'about.html',subs)
-#     else:
-#         sub=Subscribe()
-#     return render(request, 'about.html',)
+def Subs_view(request):
+        if request.method == 'POST':
+            if request.POST.get('email_id') and request.POST.get('con_number'):
+                sub=Subscribe()
+                sub.email_id= request.POST.get('email_id')
+                sub.con_number= request.POST.get('con_number')
+                sub.save()
+                subs={
+                    'sub':sub
+                }
+            return render(request,'subs.html',subs)
+
+        else:
+            sub=Subscribe()
+            return render(request,'subs.html',)
+
+
 
 
 def login_view(request):
