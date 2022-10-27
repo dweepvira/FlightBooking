@@ -1,7 +1,7 @@
 body{
   margin: 0;
   background-image: url('images/alyssa-hurley-yekIZ4ltv1o-unsplash.jpg');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
