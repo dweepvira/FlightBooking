@@ -86,6 +86,9 @@ body{
   }
 
   @media (max-width:465px){
+    body{
+      max-height: 2000px;
+    }
     .heading{
       font-size: 25px;
     }
