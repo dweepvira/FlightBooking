@@ -4,6 +4,8 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  justify-content: center;
+  align-items: center;
 }
 .home {
     text-decoration: none;
@@ -30,6 +32,12 @@ body{
     font-size: 30px;
     padding: 100px 50px 30px;
   }
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
   .updates{
     font-size: 20px;
   }
@@ -37,6 +45,11 @@ body{
     margin: 15px;
     padding: 5px;
     border-radius: 5px;
+  }
+  .input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .btn-sub {
     background: #192a2a;
@@ -53,7 +66,7 @@ body{
     font-size: 20px;
     padding: 6px 10px 6px 10px;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 15%;
     margin-top: 20px;
   }
   
@@ -65,4 +78,13 @@ body{
     background-image: -o-linear-gradient(top, #1b486b, #1b486b);
     background-image: linear-gradient(to bottom, #1b486b, #1b486b);
     text-decoration: none;
+  }
+
+  @media (max-width:465px){
+    .heading{
+      font-size: 25px;
+    }
+    .updates{
+      font-size: 15px;
+    }
   }
