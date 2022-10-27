@@ -22,10 +22,6 @@ def home_view(request):
     
 
 def booking_view(request):
-    # new_ticket_type = request.POST.get('ticket_type')
-    # context={}
-    # booking=BookForm.objects.all()
-    # booking=BookForm(request.GET)
     if request.method == 'POST':
         if request.POST.get('r') and request.POST.get('ticket_from') and request.POST.get('ticket_to') and request.POST.get('depart') and request.POST.get('Return') and request.POST.get('adults') and request.POST.get('children') and request.POST.get('name') and request.POST.get('phone_no')and request.POST.get('emailid'):
             
@@ -126,12 +122,12 @@ def plans_view(request):
             }
 
     
-            return render(request,'subs.html',plans)
+            return render(request, 'subs.html',plans)
 
     else:
         plan=Plan()
 
-        return render(request, 'plans.html',)
+    return render(request, 'plans.html',)
 
 
 
