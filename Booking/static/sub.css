@@ -6,11 +6,11 @@ body{
   background-position: center;
   justify-content: center;
   align-items: center; */
-  background-size: cover;
-  background-repeat: no-repeat;
+  
   background-position: center;
+  /* background-repeat: no-repeat;
   min-height: 100vh;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 .home {
     text-decoration: none;
