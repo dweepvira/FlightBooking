@@ -46,7 +46,7 @@ def booking_view(request):
             }
 
     
-        return render(request,'book.html',context)
+        return render(request,'subs.html',context)
 
     else:
         post=Book()
@@ -66,7 +66,7 @@ def contact_view(request):
             cont={
                 'con':con
             }
-            return render(request, 'contact.html',cont)
+            return render(request, 'subs.html',cont)
 
     else:
         con=Contact()
@@ -127,7 +127,7 @@ def plans_view(request):
             }
 
     
-        return render(request,'plans.html',plans)
+        return render(request,'subs.html',plans)
 
     else:
         plan=Plan()
