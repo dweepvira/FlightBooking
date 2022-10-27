@@ -32,17 +32,18 @@
 
                 <div class="signup-content2">
                   <label class="text">Trip start date :</label>
-                  <input type="date" class="tarikh bg-light" required name="strdate" />
+                  <input type="date" name="strdate" class="tarikh bg-light" required  />
                   <label class="text"> Trip end date :</label>
-                  <input type="date" class="tarikh bg-light" required name="enddate"/>
+                  <input type="date" name="enddate" class="tarikh bg-light" required />
                   <div></div>
 
                   <input
                     type="number"
                     class="bg-light person"
                     placeholder="Adults"
-                    required
                     name="adults1"
+                    required
+                    
                   />
                   <input
                     type="number"
@@ -54,8 +55,9 @@
                     type="text"
                     class="bg-light person"
                     placeholder="Full Name"
-                    required
                     name="f_name"
+                    required
+                    
                   />
                   <input
                     type="text"
@@ -71,9 +73,7 @@
                     onchange="EnableDisableTextBox(this)"
                     class="bg-light travel2"
                     name="hot_cat"
-                    required
-                    
-                  >
+                    required >
                     <option></option>
                     <option value="1">3 Star</option>
                     <option value="2">4 Star</option>
@@ -85,14 +85,16 @@
                   <input
                     type="text"
                     class="travel"
+                    name="hot_cat"
                     id="txtOther"
                     disabled="disabled"
+                    
                     required
                     
                   />
 
                   <label class="travel">Land Transfers</label>
-                  <select class="bg-light travel2" required name="lnd_trans">
+                  <select class="bg-light travel2" name="lnd_trns" required >
                     <option></option>
                     <option>Sedan</option>
                     <option>SUV</option>
@@ -100,7 +102,7 @@
                     <option>Bus</option>
                   </select>
                   <label class="travel">Transportation</label>
-                  <select class="bg-light travel2" required name="transport">
+                  <select class="bg-light travel2" name="transport" required >
                     <option></option>
                     <option>Air</option>
                     <option>Rail</option>

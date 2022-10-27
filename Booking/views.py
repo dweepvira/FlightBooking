@@ -105,6 +105,7 @@ def termsandcon_view(request):
 def plans_view(request):
     if request.method == 'POST':
         if request.POST.get('dest') and request.POST.get('strdate') and request.POST.get('enddate') and request.POST.get('adults1') and request.POST.get('children1') and request.POST.get('f_name') and request.POST.get('ph_num') and request.POST.get('hot_cat') and request.POST.get('lnd_trns') and request.POST.get('transport'):
+            
             plan=Plan()
             plan.dest= request.POST.get('dest')
             plan.strdate= request.POST.get('strdate')
@@ -122,12 +123,12 @@ def plans_view(request):
             }
 
     
-            return render(request, 'subs.html',plans)
+        return render(request, 'subs.html',plans)
 
     else:
         plan=Plan()
 
-    return render(request, 'plans.html',)
+        return render(request, 'plans.html',)
 
 
 
