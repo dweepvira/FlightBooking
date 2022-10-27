@@ -27,14 +27,14 @@
                 </div>
                 <div class="signup-content">
                   <label class="text" for="">Destination</label>
-                  <input class="dest" type="text=" required />
+                  <input class="dest" type="text=" required name="dest" />
                 </div>
 
                 <div class="signup-content2">
                   <label class="text">Trip start date :</label>
-                  <input type="date" class="tarikh bg-light" required />
+                  <input type="date" class="tarikh bg-light" required name="strdate" />
                   <label class="text"> Trip end date :</label>
-                  <input type="date" class="tarikh bg-light" required />
+                  <input type="date" class="tarikh bg-light" required name="enddate"/>
                   <div></div>
 
                   <input
@@ -42,23 +42,27 @@
                     class="bg-light person"
                     placeholder="Adults"
                     required
+                    name="adults1"
                   />
                   <input
                     type="number"
                     class="bg-light person"
                     placeholder="Children"
+                    name="children1"
                   />
                   <input
                     type="text"
                     class="bg-light person"
                     placeholder="Full Name"
                     required
+                    name="f_name"
                   />
                   <input
                     type="text"
                     class="bg-light person"
                     placeholder="Phone Number"
                     required
+                    name="ph_num"
                   />
 
                   <label class="travel">Hotel category</label>
@@ -82,10 +86,11 @@
                     id="txtOther"
                     disabled="disabled"
                     required
+                    name="hot_cat"
                   />
 
                   <label class="travel">Land Transfers</label>
-                  <select class="bg-light travel2" required>
+                  <select class="bg-light travel2" required name="lnd_trans">
                     <option></option>
                     <option>Sedan</option>
                     <option>SUV</option>
@@ -93,7 +98,7 @@
                     <option>Bus</option>
                   </select>
                   <label class="travel">Transportation</label>
-                  <select class="bg-light travel2" required>
+                  <select class="bg-light travel2" required name="transport">
                     <option></option>
                     <option>Air</option>
                     <option>Rail</option>
