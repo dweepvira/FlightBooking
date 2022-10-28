@@ -4,9 +4,16 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: bottom fixed;
   justify-content: center;
   align-items: center;
+  min-height: 100%;
+  /* background-position: center; */
+  /* background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed; */ 
+}
+html{
+  height: 100%;
 }
 .home {
     text-decoration: none;
@@ -28,17 +35,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
   }
   .heading{
     font-size: 30px;
-    margin: 0;
+    padding: 100px 50px 30px;
   }
   .main{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 50px 50px 50px;
+    
   }
   .updates{
     font-size: 20px;
@@ -83,6 +90,10 @@ body{
   }
 
   @media (max-width:465px){
+    
+    .btn-sub{
+      margin-left: 20%;
+    }
     .heading{
       font-size: 25px;
     }
