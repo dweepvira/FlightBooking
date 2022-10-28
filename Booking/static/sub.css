@@ -38,13 +38,15 @@ html{
     
   }
   .heading{
+    margin: 0%;
     font-size: 30px;
-    padding: 100px 50px 30px;
+    /* padding: 100px 50px 30px; */
   }
   .main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 50px 50px 50px;
     
   }
   .updates{
