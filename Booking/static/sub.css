@@ -47,6 +47,7 @@ html{
     justify-content: center;
     align-items: center;
     padding: 100px 50px 50px 50px;
+    flex-direction: column;
     
   }
   .updates{
@@ -94,12 +95,12 @@ html{
   @media (max-width:465px){
     
     .btn-sub{
-      margin-left: 20%;
+      margin-left: 22%;
     }
     .heading{
       font-size: 25px;
     }
     .updates{
-      font-size: 15px;
+      font-size: 18px;
     }
   }
